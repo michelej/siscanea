@@ -2,3 +2,5 @@ Simple sistema de control de notas desarrollado en el framework Yii.
 
  - Maneja Alumnos,Maestros,Informacion de matriculas y notas.
  - Tambien es capaz de generar varios reportes en formato .docx mediante el uso de la libreria PHPWord
+ 
+ Database = canea.sql
