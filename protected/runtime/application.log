@@ -6870,3 +6870,28 @@ Stack trace:
 #20 C:\Programas\xampp\htdocs\canea\Yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
 #21 C:\Programas\xampp\htdocs\canea\index.php(13): CApplication->run()
 #22 {main} REQUEST_URI=/canea/
+2012/05/12 00:14:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection falló al abrir la conexion a la base de datos: SQLSTATE[42000] [1049] Unknown database 'canea'' in C:\Programas\xampp\htdocs\siscanea\Yii\framework\db\CDbConnection.php:348
+Stack trace:
+#0 C:\Programas\xampp\htdocs\siscanea\Yii\framework\db\CDbConnection.php(297): CDbConnection->open()
+#1 C:\Programas\xampp\htdocs\siscanea\Yii\framework\db\CDbConnection.php(275): CDbConnection->setActive(true)
+#2 C:\Programas\xampp\htdocs\siscanea\Yii\framework\base\CModule.php(372): CDbConnection->init()
+#3 C:\Programas\xampp\htdocs\siscanea\Yii\framework\base\CApplication.php(426): CModule->getComponent('db')
+#4 C:\Programas\xampp\htdocs\siscanea\Yii\framework\db\ar\CActiveRecord.php(607): CApplication->getDb()
+#5 C:\Programas\xampp\htdocs\siscanea\Yii\framework\db\ar\CActiveRecord.php(2236): CActiveRecord->getDbConnection()
+#6 C:\Programas\xampp\htdocs\siscanea\Yii\framework\db\ar\CActiveRecord.php(371): CActiveRecordMetaData->__construct(Object(Alumno))
+#7 C:\Programas\xampp\htdocs\siscanea\protected\models\Alumno.php(32): CActiveRecord::model('Alumno')
+#8 C:\Programas\xampp\htdocs\siscanea\protected\views\site\index.php(3): Alumno::model()
+#9 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\CBaseController.php(119): require('C:\Programas\xa...')
+#10 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\Programas\xa...', NULL, true)
+#11 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\CController.php(866): CBaseController->renderFile('C:\Programas\xa...', NULL, true)
+#12 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\CController.php(779): CController->renderPartial('index', NULL, true)
+#13 C:\Programas\xampp\htdocs\siscanea\protected\controllers\SiteController.php(33): CController->render('index')
+#14 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#16 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#17 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\CWebApplication.php(328): CController->run('')
+#19 C:\Programas\xampp\htdocs\siscanea\Yii\framework\web\CWebApplication.php(121): CWebApplication->runController('')
+#20 C:\Programas\xampp\htdocs\siscanea\Yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#21 C:\Programas\xampp\htdocs\siscanea\index.php(13): CApplication->run()
+#22 {main} REQUEST_URI=/siscanea/
