@@ -6,4 +6,15 @@ Simple sistema de control de notas desarrollado en el framework Yii.
    Usuario  - admin/admin
    DataBase -  /protected/data/canea.sql
 
+   Configurar conexion a la DB en:
+     /protected/config/main.php
+
+        'db'=>array(
+ 		       'connectionString' => 'mysql:host=localhost;dbname=canea',
+			       'emulatePrepare' => true,
+			       'username' => 'root',    <- usuario
+			       'password' => 'root',    <- password
+			       'charset' => 'utf8',
+		       ),
+
    Probado con Yii version 1.1.7
